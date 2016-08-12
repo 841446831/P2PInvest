@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chinosoft.p2pinvest.Activity.InvestInfoActivity"
+    android:showDividers="middle"
+    android:divider="@drawable/divider">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themeColor"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="财神道"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/little_space"
+            android:paddingBottom="@dimen/little_space"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text"
+            android:textSize="20sp"
+            android:text="投资金额："/>
+
+        <TextView
+            android:id="@+id/invest_money"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:textColor="@color/black_text"
+            android:text="100元"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text"
+            android:textSize="20sp"
+            android:text="账户余额："/>
+
+        <TextView
+            android:id="@+id/my_money"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:textSize="20sp"
+            android:textColor="@color/themeColor"
+            android:text="100.00元"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="@dimen/buttom_space"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ll_product">
+        <Button
+            android:id="@+id/btn_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_invest"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="提  交"/>
+
+    </LinearLayout>
+
+</LinearLayout>

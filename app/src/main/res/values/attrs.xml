@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundProgress">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textTitleColor" format="color"></attr>
+        <attr name="textTitleSize" format="dimension"></attr>
+        <attr name="textNameColor" format="color"></attr>
+        <attr name="textNameSize" format="dimension"></attr>
+        <attr name="textTitle" format="string"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TopBar">
+        <attr name="leftText" format="string"/>
+        <attr name="leftTextColor" format="color"/>
+        <attr name="centerText" format="string"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="rightText" format="string"/>
+        <attr name="rightTextColor" format="color"/>
+    </declare-styleable>
+</resources>

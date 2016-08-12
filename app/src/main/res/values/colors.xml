@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="themeColor">#eb4f38</color>
+    <color name="gray">#a9b7b7</color>
+    <color name="colorCircle">#FFD6CC</color>
+    <color name="black">#666666</color>
+    <color name="percentageColor">#F03131</color>
+    <color name="white">#FFFFFF</color>
+    <color name="indicatorTextColor">#ff000000</color>
+    <color name="my_divider_color">#DDDDDD</color>
+    <color name="product_name">#111111</color>
+    <color name="headerColor">#E6E6E6</color>
+    <color name="borrowNameColor">#ff000000</color>
+    <color name="black_text">#ff000000</color>
+    <color name="addminusColor">#FFD6CC</color>
+</resources>

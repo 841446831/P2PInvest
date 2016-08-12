@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chinosoft.p2pinvest.ui.MyScroview
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/diviver"
+        android:showDividers="middle">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v4.view.ViewPager>
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:padding="10dp">
+                </com.viewpagerindicator.CirclePageIndicator>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@drawable/diviver"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/activity"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/little_space"
+                        android:text="活动中心"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pinacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/little_space"
+                        android:text="新手推荐"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/we"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/little_space"
+                        android:text="了解我们"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/yuan"
+                        android:id="@+id/imageView2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_image"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-15dp"
+                    android:id="@+id/ll_product">
+
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                        android:layout_weight="3"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/startMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5000"
+                            android:textStyle="bold"
+                            android:textSize="25sp"/>
+                        <TextView
+                            android:id="@+id/title_startMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="起投金额"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                        <com.chinosoft.p2pinvest.ui.RoundProgress
+                            android:id="@+id/roundProgress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:roundColor="@color/colorCircle"
+                            app:roundProgressColor="@color/percentageColor"
+                            app:roundWidth="10dp"
+                            app:textColor="@color/themeColor"
+                            app:textSize="30sp"
+                            app:textNameColor="@color/black"
+                            app:textNameSize="20sp"
+                            app:textTitleSize="10sp"
+                            app:textTitleColor="@color/percentageColor"
+                            >
+                        </com.chinosoft.p2pinvest.ui.RoundProgress>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/limitTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18个月"
+                            android:textStyle="bold"
+                            android:textSize="25sp"/>
+                        <TextView
+                            android:id="@+id/title_limitTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="理财期限"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/little_space"
+                        android:layout_marginBottom="@dimen/buttom_space"
+                        android:layout_gravity="center"
+                        android:layout_below="@+id/ll_product">
+                        <Button
+                            android:id="@+id/btn_invest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_invest"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:text="@string/btn_invest"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </com.chinosoft.p2pinvest.ui.MyScroview>
+
+</LinearLayout>

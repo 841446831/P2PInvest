@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chinosoft.p2pinvest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.InvestActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.UserInfoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.InvestInfoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Activity.MyInvestActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity android:name=".Activity.BalanceAccountActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

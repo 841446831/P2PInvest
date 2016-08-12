@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.chinosoft.p2pinvest.Activity.MyInvestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themeColor"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已结算"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/little_space"
+            android:paddingBottom="@dimen/little_space"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/themeColor"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="@color/themeColor">
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_fragmet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

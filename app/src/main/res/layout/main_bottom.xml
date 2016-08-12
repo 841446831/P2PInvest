@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:listDivider">
+    </View>
+
+    <RadioGroup
+        android:id="@+id/main_bottom_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:drawableTop="@drawable/selector_home"
+            android:textColor="@drawable/selector_color"
+            android:drawablePadding="@dimen/little_space"
+            android:checked="true"
+            android:text="首页"/>
+        <RadioButton
+            android:id="@+id/finacing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:drawableTop="@drawable/selector_finacing"
+            android:textColor="@drawable/selector_color"
+            android:text="理财"
+             />
+
+        <RadioButton
+            android:id="@+id/borrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:drawableTop="@drawable/selector_borrow"
+            android:textColor="@drawable/selector_color"
+            android:text="借款"
+            />
+        <RadioButton
+            android:id="@+id/my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:drawableTop="@drawable/selector_my"
+            android:textColor="@drawable/selector_color"
+            android:text="我的"/>
+
+    </RadioGroup>
+
+</LinearLayout>

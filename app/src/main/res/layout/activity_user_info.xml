@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:showDividers="middle"
+    android:divider="@drawable/diviver">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themeColor"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="借款"
+            android:layout_centerInParent="true"
+            android:paddingTop="@dimen/little_space"
+            android:paddingBottom="@dimen/little_space"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="用户名"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="用户名"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="10dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/enter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_realname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="实名认证"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/realname"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="未认证"
+            android:textSize="20sp"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="10dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/enter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="手机号码"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="15779787978"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="10dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/enter"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="电子邮箱"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="841446831@qq.com"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:gravity="center_vertical|right"
+            android:drawablePadding="10dp"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/enter"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="更改密码"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/enter"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/themeColor"
+        android:background="@drawable/button_shape_logout"
+        android:text="退出登录"
+        />
+
+
+
+</LinearLayout>

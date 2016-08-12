@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+              <TextView
+                  android:id="@+id/tv_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="嘉保贷"
+                  android:textSize="15sp"
+                  android:textColor="@color/borrowNameColor"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_peoplenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="43841人已成功借款"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:paddingRight="5dp"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="可借金额高达50万，快至两天内到款，有人寿保单就能申请，还款期高达36个月"
+                android:paddingTop="2dp"
+                android:maxLines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
